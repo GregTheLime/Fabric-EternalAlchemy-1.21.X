@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "eternalalchemy",
+	"version": "${version}",
+	"name": "Eternal Alchemy",
+	"description": "Eternal Alchemy mod by GregTheLime!",
+	"authors": [
+		"GregTheLime"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/eternalalchemy/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.gregthelime.eternalalchemy.EternalAlchemy"
+		],
+		"fabric-datagen": [
+			"net.gregthelime.eternalalchemy.EternalAlchemyDataGenerator"
+		],
+		"client": [
+			"net.gregthelime.eternalalchemy.EternalModClient"
+		]
+	},
+	"mixins": [
+		"eternalalchemy.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
